@@ -1,15 +1,19 @@
 {
-  "name": "chai-aur-code",
-  "version": "1.0.0",
-  "description": "backend",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "js",
-    "backend"
-  ],
-  "author": "shahheer",
-  "license": "ISC"
+    "name": "chai-aur-code",
+    "version": "1.0.0",
+    "description": "backend",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "js",
+        "backend"
+    ],
+    "author": "shahheer",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^3.1.10"
+    }
 }
