@@ -19,15 +19,15 @@ const videoSchema = new Schema({
         required: true
     },
     duration: {
-        type: number,
+        type: Number,
         required: true
     },
     views: {
-        type: number,
+        type: Number,
         default: 0
     },
     isPublished: {
-        type: bolean,
+        type: Boolean,
         default: true
 
     },

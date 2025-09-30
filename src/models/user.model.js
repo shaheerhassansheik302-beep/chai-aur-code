@@ -8,7 +8,7 @@ import brcypt from "bcrypt"
 const userSchema = new Schema({
     username: {
         type: String,
-        requiured: true,
+        required: true,
         unique: true,
         lowercase: true,
         index: true,
@@ -30,7 +30,7 @@ const userSchema = new Schema({
     },
     avatar: {
         type: String,
-        required: true,
+        required: false,
     },
     coverImage: {
         type: String,
@@ -56,7 +56,7 @@ userSchema.pre("save", async function(next) {
     if (!this.isModified("password")) return next();
 
 
-    this.password = brcypt.hash(this.password, 10)
+    this.password = await brcypt.hash(this.password, 10)
     next()
 })
 
